@@ -1,0 +1,14 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Products";
+}
+
+<div class="text-center">
+    <h1>Welcome</h1>
+
+    @foreach(var product in Model.Products)
+    {
+        <p>@product.Id - @product.Name. Price: @product.Price</p>
+    }
+</div>
